@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 08:16+0200\n"
+"POT-Creation-Date: 2016-08-27 06:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,34 +18,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: models.py:6 models.py:24
+#: models.py:6 models.py:34
 msgid "grade"
 msgstr "graad"
 
-#: models.py:7 models.py:30
+#: models.py:7 models.py:40
 msgid "group"
 msgstr "klas"
 
-#: models.py:8
+#: models.py:8 models.py:24
 msgid "wardens"
 msgstr "voogden"
 
 #: models.py:11
+msgid "pupil"
+msgstr "leerling"
+
+#: models.py:12
+msgid "pupils"
+msgstr "leerlingen"
+
+#: models.py:15
 msgid "diplomas"
 msgstr "diploma's"
 
-#: models.py:17
+#: models.py:18
+msgid "teacher"
+msgstr "leraar"
+
+#: models.py:19
+msgid "teachers"
+msgstr "leraren"
+
+#: models.py:23
+msgid "warden"
+msgstr "voogd"
+
+#: models.py:27
 msgid "name"
 msgstr "naam"
 
-#: models.py:25
+#: models.py:35
 msgid "grades"
 msgstr "graden"
 
-#: models.py:28
+#: models.py:38
 msgid "class teacher"
 msgstr "klastitularis"
 
-#: models.py:31
+#: models.py:41
 msgid "groups"
 msgstr "klassen"

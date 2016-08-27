@@ -42,7 +42,7 @@ class NamedOption(models.Model):
     name = models.CharField(_("name"), max_length=30, primary_key=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
     class Meta:
         abstract = True
@@ -62,3 +62,22 @@ class Group(NamedOption):
     class Meta:
         verbose_name = _("group")
         verbose_name_plural = _("groups")
+
+
+class Course(models.Model):
+    name = models.CharField(_("name"), max_length=150)
+
+    teachers = models.ManyToManyField(
+        Teacher, verbose_name=_("teachers"), blank=True
+    )
+
+    groups = models.ManyToManyField(
+        Group, verbose_name=_("groups"), blank=True
+    )
+
+    def __str__(self):
+        return str(self.name)
+
+    class Meta:
+        verbose_name = _("course")
+        verbose_name_plural = _("courses")

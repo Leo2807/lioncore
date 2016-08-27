@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from .models import Grade, Group, Pupil, Warden, Teacher
+from .models import Grade, Group, Pupil, Warden, Teacher, Course
 from django.contrib.auth.models import User
 
 
@@ -25,3 +25,10 @@ class UserExtensionTest(TestCase):
     def test_correct_string_representation(self):
         for user_extension_class in Pupil, Warden, Teacher:
             self.correct_string_representation_factory(user_extension_class)
+
+
+class CourseTest(TestCase):
+    def test_correct_string_representation(self):
+        name = "My course about pancakes for beginners"
+        course = Course(name=name)
+        self.assertEqual(name, str(course))

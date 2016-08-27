@@ -14,9 +14,11 @@ class UserExtension(models.Model):
 
 
 class Pupil(UserExtension):
-    grade = models.ForeignKey('Grade', verbose_name=_("grade"))
-    group = models.ForeignKey('Group', verbose_name=_("group"))
-    wardens = models.ManyToManyField('Warden', verbose_name=_("wardens"))
+    grade = models.ForeignKey('Grade', verbose_name=_("grade"), blank=True)
+    group = models.ForeignKey('Group', verbose_name=_("group"), blank=True)
+    wardens = models.ManyToManyField(
+        'Warden', verbose_name=_("wardens"), blank=True
+    )
 
     class Meta:
         verbose_name = _("pupil")
@@ -24,7 +26,7 @@ class Pupil(UserExtension):
 
 
 class Teacher(UserExtension):
-    diplomas = models.TextField(_("diplomas"))
+    diplomas = models.TextField(_("diplomas"), blank=True)
 
     class Meta:
         verbose_name = _("teacher")
@@ -56,7 +58,7 @@ class Grade(NamedOption):
 
 class Group(NamedOption):
     class_teacher = models.ManyToManyField(
-        Teacher, verbose_name=_("class teacher")
+        Teacher, verbose_name=_("class teacher"), blank=True
     )
 
     class Meta:

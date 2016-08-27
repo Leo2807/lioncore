@@ -7,11 +7,21 @@ class Pupil(User):
     group = models.ForeignKey('Group', verbose_name=_("group"))
     wardens = models.ManyToManyField('Warden', verbose_name=_("wardens"))
 
+    class Meta:
+        verbose_name = _("pupil")
+        verbose_name_plural = _("pupils")
+
 class Teacher(User):
     diplomas = models.TextField(_("diplomas"))
 
+    class Meta:
+        verbose_name = _("teacher")
+        verbose_name_plural = _("teachers")
+
 class Warden(User):
-    pass
+    class Meta:
+        verbose_name = _("warden")
+        verbose_name_plural = _("wardens")
 
 class NamedOption(models.Model):
     name = models.CharField(_("name"), max_length=30, primary_key=True)

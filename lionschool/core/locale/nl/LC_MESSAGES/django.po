@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 13:12+0200\n"
+"POT-Creation-Date: 2016-08-27 15:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,62 +18,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: models.py:17 models.py:55
+#: lionschool/core/models.py:17 lionschool/core/models.py:55
 msgid "grade"
 msgstr "graad"
 
-#: models.py:18 models.py:65
+#: lionschool/core/models.py:18 lionschool/core/models.py:65
 msgid "group"
 msgstr "klas"
 
-#: models.py:20 models.py:40
+#: lionschool/core/models.py:20 lionschool/core/models.py:40
 msgid "wardens"
 msgstr "voogden"
 
-#: models.py:24
+#: lionschool/core/models.py:24
 msgid "pupil"
 msgstr "leerling"
 
-#: models.py:25
+#: lionschool/core/models.py:25
 msgid "pupils"
 msgstr "leerlingen"
 
-#: models.py:29
+#: lionschool/core/models.py:29
 msgid "diplomas"
 msgstr "diploma's"
 
-#: models.py:32
+#: lionschool/core/models.py:32
 msgid "teacher"
 msgstr "leraar"
 
-#: models.py:33 models.py:73
+#: lionschool/core/models.py:33 lionschool/core/models.py:73
 msgid "teachers"
 msgstr "leraren"
 
-#: models.py:39
+#: lionschool/core/models.py:39
 msgid "warden"
 msgstr "voogd"
 
-#: models.py:44 models.py:70
+#: lionschool/core/models.py:44 lionschool/core/models.py:70
 msgid "name"
 msgstr "naam"
 
-#: models.py:56
+#: lionschool/core/models.py:56
 msgid "grades"
 msgstr "graden"
 
-#: models.py:61
+#: lionschool/core/models.py:61
 msgid "class teacher"
 msgstr "klastitularis"
 
-#: models.py:66 models.py:77
+#: lionschool/core/models.py:66 lionschool/core/models.py:77
 msgid "groups"
 msgstr "klassen"
 
-#: models.py:84
+#: lionschool/core/models.py:84
 msgid "course"
 msgstr "cursus"
 
-#: models.py:85
+#: lionschool/core/models.py:85
 msgid "courses"
 msgstr "cursussen"

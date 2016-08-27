@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 15:46+0200\n"
+"POT-Creation-Date: 2016-08-27 16:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,62 +18,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lionschool/core/models.py:17 lionschool/core/models.py:55
+#: lionschool/core/models.py:18 lionschool/core/models.py:56
 msgid "grade"
 msgstr "graad"
 
-#: lionschool/core/models.py:18 lionschool/core/models.py:65
+#: lionschool/core/models.py:19
 msgid "group"
 msgstr "klas"
 
-#: lionschool/core/models.py:20 lionschool/core/models.py:40
+#: lionschool/core/models.py:21 lionschool/core/models.py:41
 msgid "wardens"
 msgstr "voogden"
 
-#: lionschool/core/models.py:24
+#: lionschool/core/models.py:25
 msgid "pupil"
 msgstr "leerling"
 
-#: lionschool/core/models.py:25
+#: lionschool/core/models.py:26
 msgid "pupils"
 msgstr "leerlingen"
 
-#: lionschool/core/models.py:29
+#: lionschool/core/models.py:30
 msgid "diplomas"
 msgstr "diploma's"
 
-#: lionschool/core/models.py:32
+#: lionschool/core/models.py:33
 msgid "teacher"
 msgstr "leraar"
 
-#: lionschool/core/models.py:33 lionschool/core/models.py:73
+#: lionschool/core/models.py:34 lionschool/core/models.py:74
 msgid "teachers"
 msgstr "leraren"
 
-#: lionschool/core/models.py:39
+#: lionschool/core/models.py:40
 msgid "warden"
 msgstr "voogd"
 
-#: lionschool/core/models.py:44 lionschool/core/models.py:70
+#: lionschool/core/models.py:45 lionschool/core/models.py:71
 msgid "name"
 msgstr "naam"
 
-#: lionschool/core/models.py:56
+#: lionschool/core/models.py:57
 msgid "grades"
 msgstr "graden"
 
-#: lionschool/core/models.py:61
+#: lionschool/core/models.py:62
 msgid "class teacher"
 msgstr "klastitularis"
 
-#: lionschool/core/models.py:66 lionschool/core/models.py:77
-msgid "groups"
+#: lionschool/core/models.py:66
+msgctxt "group"
+msgid "synonym: class"
+msgstr "klas"
+
+#: lionschool/core/models.py:67 lionschool/core/models.py:79
+msgctxt "groups"
+msgid "synonym: classes"
 msgstr "klassen"
 
-#: lionschool/core/models.py:84
+#: lionschool/core/models.py:87
 msgid "course"
 msgstr "cursus"
 
-#: lionschool/core/models.py:85
+#: lionschool/core/models.py:88
 msgid "courses"
 msgstr "cursussen"

@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import pgettext_lazy
 
 
 class UserExtension(models.Model):
@@ -62,8 +63,8 @@ class Group(NamedOption):
     )
 
     class Meta:
-        verbose_name = _("group")
-        verbose_name_plural = _("groups")
+        verbose_name = pgettext_lazy("group", "synonym: class")
+        verbose_name_plural = pgettext_lazy("groups", "synonym: classes")
 
 
 class Course(models.Model):
@@ -74,7 +75,9 @@ class Course(models.Model):
     )
 
     groups = models.ManyToManyField(
-        Group, verbose_name=_("groups"), blank=True
+        Group,
+        verbose_name=pgettext_lazy("groups", "synonym: classes"),
+        blank=True
     )
 
     def __str__(self):

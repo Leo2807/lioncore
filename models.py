@@ -1,9 +1,19 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
 
 
-class Pupil(User):
+class UserExtension(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, models.CASCADE)
+
+    def __str__(self):
+        return self.user.__str__()
+
+    class Meta:
+        abstract = True
+
+
+class Pupil(UserExtension):
     grade = models.ForeignKey('Grade', verbose_name=_("grade"))
     group = models.ForeignKey('Group', verbose_name=_("group"))
     wardens = models.ManyToManyField('Warden', verbose_name=_("wardens"))
@@ -13,7 +23,7 @@ class Pupil(User):
         verbose_name_plural = _("pupils")
 
 
-class Teacher(User):
+class Teacher(UserExtension):
     diplomas = models.TextField(_("diplomas"))
 
     class Meta:
@@ -21,7 +31,8 @@ class Teacher(User):
         verbose_name_plural = _("teachers")
 
 
-class Warden(User):
+class Warden(UserExtension):
+
     class Meta:
         verbose_name = _("warden")
         verbose_name_plural = _("wardens")
